@@ -1,0 +1,621 @@
+// Globals
+
+$enable-scaling-components: true;
+
+
+// Color system
+
+$white: #fff;
+$gray-200: #f8f9f9;
+$gray-300: #dadedf;
+$gray-400: #b6bdc0;
+$gray-500: #7c878e;
+$gray-800: #4a4d50;
+$black: #000;
+
+$blue: #006cb1;
+$purple: #803f93;
+$pink: #db617c;
+$orange: #ff7460;
+$yellow: #f8bf6b;
+$gold: #e0d472;
+$green: #98c586;
+$teal: #1fbdb5;
+$cyan: #339db0;
+
+$primary: $blue;
+$secondary: $gray-200;
+$success: #15847f;
+$info: #008ccf;
+$warning: #ff8e60;
+$danger: #a43c59;
+$light: $gray-200;
+$dark: $gray-800;
+
+$primary-l2: lighten(adjust-hue($primary, -3), 56.27); // #d1efff
+$primary-l3: lighten(adjust-hue($primary, -3), 60.59); // #e7f7ff
+$primary-d1: darken(desaturate(adjust-hue($primary, 2), 1.23), 2.94); // #015da1
+$primary-d2: darken(adjust-hue($primary, 5), 6.08); // #004d92
+
+$success-d1: darken(saturate($success, 12.40), 11.76); // #075653
+
+$colors: () !default;
+$colors: map-merge((
+	"gold": $gold,
+), $colors);
+
+
+// Body
+
+$body-bg: $white;
+$body-color: $gray-800;
+
+
+// Links
+
+$link-color: $blue;
+$link-decoration: none;
+$link-hover-color: $primary-d2;
+$link-hover-decoration: underline;
+
+// Components
+
+$border-color: $gray-400;
+$box-shadow: 0 .125rem .375rem rgba($black, .15);
+
+
+// Typography
+
+$font-family-sans-serif: "Interstate", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$font-weight-lighter: 300;
+$font-weight-light: 300;
+$font-weight-bold: 400;
+$font-weight-bolder: 400;
+
+$font-size-base: 1rem;
+$small-font-size: .875rem;
+
+$h1-font-size: $font-size-base * 2.25;
+$h2-font-size: $font-size-base * 1.875;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base * 1;
+$h6-font-size: $font-size-base * .75;
+
+$headings-font-weight: $font-weight-bold;
+
+$hr-margin-y: .5rem;
+$hr-border-color: $gray-300;
+
+$font-sizes: (
+	1: $h1-font-size,
+	2: $h2-font-size,
+	3: $h3-font-size,
+	4: $h4-font-size,
+	5: $h5-font-size,
+	6: $h6-font-size
+);
+
+
+// Sheets
+
+
+// Tables
+
+$table-font-size: .875rem;
+$table-color: #5c6670;
+$table-border-color: $gray-400;
+$table-hover-bg: $primary-l3;
+
+$table-list-hover-bg: $table-hover-bg;
+$table-list-active-bg: $table-list-hover-bg;
+$table-list-border-radius: 0;
+$table-list-border-x-width: 0;
+
+$table-head-bg: $secondary;
+$table-head-color: $table-color;
+$table-head-font-weight: $font-weight-bold;
+
+
+// Buttons + Forms
+
+$input-btn-padding-y: .532rem;
+$input-btn-padding-x: .938rem;
+
+$input-btn-focus-width: .2rem;
+
+$input-label-reference-mark-color: $body-color;
+$input-label-reference-mark-font-size: .4rem;
+$input-label-reference-mark-spacer: .2rem;
+
+
+// Buttons
+
+$btn-disabled-opacity: 1;
+$btn-border-width: .125rem;
+$btn-block-spacing-y: 1rem;
+
+$btn-primary: () !default;
+$btn-primary: map-merge((
+	bg: $primary,
+	border-color: transparent,
+	color: $white,
+	hover-bg: $primary-d2,
+	hover-border-color: transparent,
+	focus-bg: $primary-d2,
+	disabled-bg: $gray-400,
+	disabled-border-color: transparent,
+	disabled-color: $white,
+	active-bg: $primary-d2,
+	active-border-color: transparent,
+), $btn-primary);
+
+$btn-outline-primary: () !default;
+$btn-outline-primary: map-merge((
+	bg: $white,
+	border-color: $primary,
+	color: $primary,
+	hover-bg: $white,
+	hover-color: $primary-d2,
+	hover-border-color: $primary-d2,
+	focus-bg: transparent,
+	focus-color: $primary-d2,
+	disabled-bg: $white,
+	disabled-border-color: $gray-400,
+	disabled-color: $gray-400,
+	active-bg: $white,
+	active-color: $primary-d2,
+	active-border-color: $primary-d2,
+), $btn-outline-primary);
+
+$btn-success: () !default;
+$btn-success: map-merge((
+	bg: $success,
+	border-color: transparent,
+	color: $white,
+	hover-bg: $success-d1,
+	hover-border-color: transparent,
+	focus-bg: $success-d1,
+	focus-border-color: transparent,
+	disabled-bg: $gray-400,
+	disabled-border-color: transparent,
+	disabled-color: $white,
+	active-bg: $success-d1,
+	active-border-color: transparent,
+), $btn-success);
+
+$btn-hybrid: () !default;
+$btn-hybrid: map-merge((
+	bg: transparent,
+	border-color: $primary,
+	color: $primary,
+	hover-bg: transparent,
+	hover-border-color: $primary-d2,
+	hover-color: $primary-d2,
+	focus-bg: transparent,
+	focus-border-color: $primary-d2,
+	focus-box-shadow: none,
+	focus-color: $primary-d2,
+	disabled-bg: transparent,
+	disabled-border-color: $gray-400,
+	disabled-color: $gray-400,
+	active-border-color: $primary,
+	active-color: $white,
+	active-bg: $primary,
+), $btn-hybrid);
+
+$btn-palette: () !default;
+$btn-palette: map-merge((
+	hybrid: $btn-hybrid,
+), $btn-palette);
+
+
+// Forms
+
+$input-color: $body-color;
+
+$input-focus-border-color: $gray-500;
+$input-focus-box-shadow: 0 0 0 $input-btn-focus-width rgba($input-focus-border-color, .25);
+
+$input-placeholder-color: $gray-500;
+
+$input-height: 2.813rem;
+
+
+// Form validation
+
+
+// Navs
+
+$nav-link-padding-y: .5rem;
+$nav-link-disabled-color: $gray-400;
+
+$nav-tabs-border-color: transparent;
+$nav-tabs-border-width: null;
+
+$nav-tabs-link-color: $body-color;
+$nav-tabs-link-hover-border-color: $gray-300;
+$nav-tabs-link-active-color: $nav-tabs-link-color;
+$nav-tabs-link-active-bg: $white;
+$nav-tabs-link-active-border-color: transparent;
+
+
+$nav-underline-link-color: $body-color;
+$nav-underline-link-padding-y: $nav-link-padding-y;
+$nav-underline-link-hover-color: $nav-underline-link-color;
+$nav-underline-link-active-color: $nav-underline-link-color;
+$nav-underline-link-disabled-color: $nav-link-disabled-color;
+
+$nav-underline-link-highlight-content: '';
+$nav-underline-link-highlight-left: 0;
+$nav-underline-link-highlight-right: 0;
+
+$nav-underline-link-active-highlight: $primary-d2;
+$nav-underline-link-active-highlight-height: .313rem;
+
+
+// Navbar
+
+$navbar-light-color: $body-color;
+$navbar-light-hover-color: $navbar-light-color;
+$navbar-light-active-color: $navbar-light-color;
+$navbar-light-disabled-color: $gray-400;
+
+$navigation-bar-size: () !default;
+$navigation-bar-size: map-merge((
+	collapse-dropdown-item-padding-y-mobile: $nav-link-padding-y,
+	active-border-bottom-width: .313rem,
+), $navigation-bar-size);
+
+$navigation-bar-base: () !default;
+$navigation-bar-base: map-merge((
+	link-color: $navbar-light-color,
+	link-hover-color: $navbar-light-hover-color,
+	link-active-color: $navbar-light-active-color,
+	link-disabled-color: $navbar-light-disabled-color,
+	link-disabled-opacity: 1,
+	underline-active-bg: $primary-d2,
+), $navigation-bar-base);
+
+$navigation-bar-light: () !default;
+$navigation-bar-light: map-merge((
+	bg: #f1f3f3,
+), $navigation-bar-light);
+
+$navigation-bar-secondary: () !default;
+$navigation-bar-secondary: map-merge((
+	bg: $primary,
+	color: $white,
+	link-color: $white,
+	link-hover-color: $white,
+	link-active-color: $white,
+	underline-active-bg: $white,
+	link-disabled-color: $navbar-light-disabled-color,
+	link-disabled-opacity: 1,
+	brand-color: $white,
+	brand-hover-color: $white,
+), $navigation-bar-secondary);
+
+
+// Dropdowns
+
+$dropdown-font-size: .875rem;
+$dropdown-color: $body-color;
+$dropdown-border-color: $gray-400;
+$dropdown-divider-bg: $hr-border-color;
+$dropdown-box-shadow: $box-shadow;
+$dropdown-max-width: 265px;
+
+$dropdown-item-padding-x: 1rem;
+
+$dropdown-link-color: $gray-800;
+
+$dropdown-link-hover-color: $gray-800;
+$dropdown-link-hover-bg: $primary-l2;
+
+$dropdown-link-active-color: $dropdown-link-hover-color;
+$dropdown-link-active-bg: $dropdown-link-hover-bg;
+
+$dropdown-item-base: () !default;
+$dropdown-item-base: map-merge((
+	focus-outline: none,
+), $dropdown-item-base);
+
+
+// Pagination
+
+$pagination-color: $body-color;
+$pagination-border-width: 0;
+$pagination-hover-color: $pagination-color;
+
+$pagination-item-height-sm: 1.5rem;
+$pagination-link-border-radius: .25rem;
+$pagination-link-border-radius-sm: .25rem;
+
+$pagination-items-per-page-link: () !default;
+$pagination-items-per-page-link: map-merge((
+	border-color: transparent,
+	color: $pagination-color,
+), $pagination-items-per-page-link);
+
+$pagination-items-per-page-link-hover: () !default;
+$pagination-items-per-page-link-hover: map-merge((
+	color: $pagination-color,
+), $pagination-items-per-page-link-hover);
+
+$pagination-link: () !default;
+$pagination-link: map-merge((
+	border-radius: $pagination-link-border-radius,
+), $pagination-link);
+
+
+
+// Cards
+
+$card-border-color: $gray-300;
+$card-box-shadow: 0 .125rem .25rem rgba($black, .15);
+$card-border-radius: .25rem;
+$card-cap-bg: transparent;
+
+$card-body-padding-left: 1.25rem;
+$card-body-padding-right: 1.25rem;
+
+$card-title: () !default;
+$card-title: map-merge((
+	color: $body-color,
+), $card-title);
+
+$card-type-template: () !default;
+$card-type-template: map-merge((
+	color: $body-color,
+	hover-color: $body-color,
+), $card-type-template);
+
+$template-card-horizontal: () !default;
+$template-card-horizontal: map-merge((
+	color: $body-color,
+	hover-color: $body-color,
+), $template-card-horizontal);
+
+$card-interactive: () !default;
+$card-interactive: map-merge((
+	active-bg: $primary-l2,
+	active-border-color: $card-border-color,
+	bg: $white,
+	border-color: $card-border-color,
+	color: $body-color,
+	disabled-bg: $gray-300,
+	disabled-border-color: $card-border-color,
+	disabled-color: $body-color,
+	focus-bg: $primary-l2,
+	hover-bg: $primary-l2,
+	hover-border-color: $card-border-color,
+), $card-interactive);
+
+$card-interactive-after-highlight: () !default;
+$card-interactive-after-highlight: map-merge((
+	content: null,
+), $card-interactive-after-highlight);
+
+$card-interactive-primary: () !default;
+$card-interactive-primary: map-merge((
+	hover-bg: $primary-l2,
+	focus-bg: $primary-l2,
+	active-bg: $primary-l2,
+), $card-interactive-primary);
+
+$card-interactive-secondary: () !default;
+$card-interactive-secondary: map-merge((
+	color: #5c6670,
+	border-color: transparent,
+	bg: $secondary,
+	box-shadow: none,
+	hover-bg: $primary-l2,
+	hover-color: null,
+	hover-border-color: transparent,
+	hover-box-shadow: null,
+	focus-bg: $primary-l2,
+	active-bg: $primary-l2,
+	active-border-color: transparent,
+), $card-interactive-secondary);
+
+
+// Stickers
+
+
+// Badges
+
+$badge-dark-bg: $black;
+$badge-dark-color: $white;
+
+$badge-padding-y: .063rem;
+$badge-padding-x: .125rem;
+
+$badge-font-size: .875rem;
+
+
+// Labels
+
+$label-font-weight: $font-weight-bold;
+$label-border-radius: 1rem;
+$label-border-color: #747480;
+$label-color: $body-color;
+
+$label-lg: () !default;
+$label-lg: map-merge((
+	padding-x: .5rem,
+	padding-y: .375rem,
+), $label-lg);
+
+$label-secondary: () !default;
+$label-secondary: map-merge((
+	bg: $secondary,
+	color: $body-color,
+), $label-secondary);
+
+$label-light-close: () !default;
+$label-light-close: map-merge((
+	hover-color: $body-color,
+	focus-color: $body-color,
+), $label-light-close);
+
+$label-light: () !default;
+$label-light: map-merge((
+	bg: $white,
+	border-color: $gray-400,
+	color: $body-color,
+	hover-color: $body-color,
+), $label-light);
+
+
+// Modals
+
+$modal-content-border-radius: 0;
+
+$modal-header-bg: $primary-d2;
+$modal-header-border-color: transparent;
+$modal-header-color: $white;
+$modal-header-height: 4rem;
+$modal-header-padding: 1.125rem;
+
+$modal-inner-padding: 1.4375rem;
+
+$modal-content-border-radius: .25rem;
+
+$modal-title-font-size: 1.5rem;
+$modal-title-font-weight: $font-weight-light;
+$modal-title-indicator-font-size: 	1.5rem;
+
+$modal-full-screen-spacer-x: 0;
+
+$modal-warning: () !default;
+$modal-warning: map-merge((
+	header-bg: #FFF4EC,
+	header-border-color: #FF8F39,
+	header-color: #B95000,
+), $modal-warning);
+
+
+// Alerts
+
+$alert-font-weight: $font-weight-light;
+$alert-lead-font-weight: $font-weight-bold;
+$alert-border-radius: 0;
+
+$alert-close: () !default;
+$alert-close: map-merge((
+	opacity: 1,
+	top: .6rem,
+), $alert-close);
+
+$alert-success-bg: $white;
+$alert-success-border-color: $primary;
+$alert-success-color: $primary;
+
+
+// Breadcrumb
+
+
+// Tooltips
+
+$tooltip-box-shadow: $box-shadow;
+
+
+// Popover
+
+$popover-border-color: $gray-400;
+$popover-border-radius: .25rem;
+$popover-box-shadow: $box-shadow;
+
+$popover-header-bg: transparent;
+$popover-header-color: $body-color;
+$popover-header-padding-y: 1rem;
+$popover-header-padding-x: 1rem;
+$popover-header-border-color: transparent;
+
+$popover-arrow-width: 1.313rem;
+$popover-arrow-height: .688rem;
+$popover-bottom-arrow-color: $white;
+
+
+// Date Picker
+
+$date-picker-calendar-item: () !default;
+$date-picker-calendar-item: map-merge((
+	font-size: .75rem,
+	font-weight: $font-weight-light,
+), $date-picker-calendar-item);
+
+$date-picker-day: () !default;
+$date-picker-day: map-merge((
+	font-weight: $font-weight-bold,
+), $date-picker-day);
+
+$date-picker-date: () !default;
+$date-picker-date: map-merge((
+	border-radius: .25rem,
+	color: $body-color,
+	active-bg: $primary-d2,
+	disabled-opacity: .5,
+), $date-picker-date);
+
+
+// Progress Bar
+
+$progress-height: 0.5rem;
+
+
+// Loaders
+
+$loading-animation: () !default;
+$loading-animation: map-merge((
+	color: $primary,
+), $loading-animation);
+
+
+// Cursor Types
+
+$cursor-types: (
+	alias,
+	all-scroll,
+	auto,
+	cell,
+	context-menu,
+	col-resize,
+	copy,
+	crosshair,
+	default,
+	e-resize,
+	ew-resize,
+	grab,
+	grabbing,
+	help,
+	move,
+	n-resize,
+	ne-resize,
+	nesw-resize,
+	ns-resize,
+	nw-resize,
+	nwse-resize,
+	no-drop,
+	none,
+	not-allowed,
+	pointer,
+	progress,
+	row-resize,
+	s-resize,
+	se-resize,
+	sw-resize,
+	text,
+	url,
+	w-resize,
+	wait,
+	zoom-in,
+	zoom-out
+);
+
+
+// Overflows
+
+$overflows: visible, hidden, scroll, auto, initial, inherit;

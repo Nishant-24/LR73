@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.3.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_3_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.argus.oth.claim">
+	<namespace>OTH_Claim</namespace>
+	<entity local-service="true" name="ClaimAnalytics" remote-service="false" table="OTH_ClaimAnalytics">
+
+		<!-- PK fields -->
+
+		<column name="claimAnalyticsId" primary="true" type="long" />
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+		<column name="companyId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="externalClientId" type="long" />
+		<column name="clientName" type="String" />
+		<column name="claimNumber" type="String" />
+		<column name="externalCaseId" type="long" />
+		<column name="claimStatus" type="String" />
+		<column name="receivedDate" type="Date" />
+		<column name="serviceDate" type="Date" />
+		<column name="paidDate" type="Date" />
+		<column name="externalMemberId" type="long" />
+		<column name="memberName" type="String" />
+		<column name="providerName" type="String" />
+		<column name="billType" type="String" />
+		<column name="primaryDiagnosis" type="String" />
+		<column name="chargedAmount" type="double" />
+		<column name="paidAmount" type="double" />
+		<column name="repricedAmount" type="double" />
+		<column name="savingsAmount" type="double" />
+		<column name="chargedPercent" type="double" />
+		<column name="repricedPercent" type="double" />
+		<column name="savingsPercent" type="double" />
+		<column name="chargedRange" type="String" />
+		<column name="paidRange" type="String" />
+		<column name="repricedRange" type="String" />
+		<column name="savingsRange" type="String" />
+		<column name="claimAging" type="long" />
+		<column name="procedureCodes" type="String" />
+		<column name="resultCodes" type="String" />
+		<column name="diagnosisCodes" type="String" />
+		<column name="country" type="String" />
+		<column name="state" type="String" />
+		<column name="financialExposure" type="double" />
+		<column name="repricedNetwork" type="String" />
+		<column name="clientGroupName" type="String" />
+
+		<order by="asc">
+			<order-column name="claimAnalyticsId" />
+		</order>
+
+		<finder name="ExternalClientId" return-type="Collection">
+			<finder-column name="externalClientId" />
+		</finder>
+		<finder name="E_C" return-type="Collection">
+			<finder-column name="externalClientId" />
+			<finder-column name="claimStatus" />
+		</finder>
+
+		<reference entity="Group" package-path="com.liferay.portal" />
+	</entity>
+	<entity name="StagingClaimAnalytics" local-service="true" remote-service="false" table="OTH_StagingClaimAnalytics">
+		<!-- PK Fields -->
+
+		<column name="stagingClaimAnalyticsId" type="long" primary="true" />
+
+		<!-- Audit fields -->
+
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="externalClientId" type="long" />
+		<column name="clientName" type="String" />
+		<column name="claimNumber" type="String" />
+		<column name="externalCaseId" type="long" />
+		<column name="claimStatus" type="String" />
+		<column name="receivedDate" type="String" />
+		<column name="serviceDate" type="String" />
+		<column name="paidDate" type="String" />
+		<column name="externalMemberId" type="long" />
+		<column name="memberName" type="String" />
+		<column name="providerName" type="String" />
+		<column name="billType" type="String" />
+		<column name="primaryDiagnosis" type="String" />
+		<column name="chargedAmount" type="double" />
+		<column name="paidAmount" type="double" />
+		<column name="repricedAmount" type="double" />
+		<column name="savingsAmount" type="double" />
+		<column name="chargedPercent" type="double" />
+		<column name="repricedPercent" type="double" />
+		<column name="savingsPercent" type="double" />
+		<column name="chargedRange" type="String" />
+		<column name="paidRange" type="String" />
+		<column name="repricedRange" type="String" />
+		<column name="savingsRange" type="String" />
+		<column name="claimAging" type="long" />
+		<column name="procedureCodes" type="String" />
+		<column name="resultCodes" type="String" />
+		<column name="diagnosisCodes" type="String" />
+		<column name="country" type="String" />
+		<column name="state" type="String" />
+		<column name="financialExposure" type="double" />
+		<column name="repricedNetwork" type="String" />
+		<column name="clientGroupName" type="String" />
+
+		<order by="asc">
+			<order-column name="stagingClaimAnalyticsId" />
+		</order>
+	</entity>
+</service-builder>

@@ -1,0 +1,1 @@
+create index IX_D8D68ED on OTH_ClaimAnalytics (externalClientId, claimStatus[$COLUMN_LENGTH:75$]);

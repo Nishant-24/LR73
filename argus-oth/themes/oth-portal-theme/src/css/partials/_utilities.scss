@@ -1,0 +1,17 @@
+@each $type in $cursor-types {
+	.cursor-#{$type} {
+		cursor: $type;
+	}
+}
+
+@for $i from 1 through $grid-columns {
+	.table-col-#{$i} {
+		width: percentage($i / $grid-columns);
+	}
+}
+
+@each $size, $value in $font-sizes {
+	.fs-#{$size} {
+		font-size: $value
+	}
+}

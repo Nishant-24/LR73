@@ -1,0 +1,11 @@
+dependencies {
+	compileInclude 'io.swagger:swagger-annotations:1.6.2'
+	compileInclude 'com.squareup.okhttp:okhttp:2.7.5'
+	compileInclude 'com.squareup.okhttp:logging-interceptor:2.7.5'
+	compileInclude 'com.google.code.gson:gson:2.8.1'
+	compileInclude 'io.gsonfire:gson-fire:1.8.0'
+	compileInclude 'org.threeten:threetenbp:1.3.5'
+
+	compileOnly group: "com.liferay", name: "com.liferay.petra.string"
+	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.kernel"
+}

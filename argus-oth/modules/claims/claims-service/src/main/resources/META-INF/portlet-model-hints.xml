@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.argus.oth.claim.model.ClaimAnalytics">
+		<field name="claimAnalyticsId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="externalClientId" type="long" />
+		<field name="clientName" type="String" />
+		<field name="claimNumber" type="String" />
+		<field name="externalCaseId" type="long" />
+		<field name="claimStatus" type="String" />
+		<field name="receivedDate" type="Date" />
+		<field name="serviceDate" type="Date" />
+		<field name="paidDate" type="Date" />
+		<field name="externalMemberId" type="long" />
+		<field name="memberName" type="String" />
+		<field name="providerName" type="String" />
+		<field name="billType" type="String" />
+		<field name="primaryDiagnosis" type="String" />
+		<field name="chargedAmount" type="double" />
+		<field name="paidAmount" type="double" />
+		<field name="repricedAmount" type="double" />
+		<field name="savingsAmount" type="double" />
+		<field name="chargedPercent" type="double" />
+		<field name="repricedPercent" type="double" />
+		<field name="savingsPercent" type="double" />
+		<field name="chargedRange" type="String" />
+		<field name="paidRange" type="String" />
+		<field name="repricedRange" type="String" />
+		<field name="savingsRange" type="String" />
+		<field name="claimAging" type="long" />
+		<field name="procedureCodes" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="resultCodes" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="diagnosisCodes" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="country" type="String" />
+		<field name="state" type="String" />
+		<field name="financialExposure" type="double" />
+		<field name="repricedNetwork" type="String" />
+		<field name="clientGroupName" type="String" />
+	</model>
+	<model name="com.argus.oth.claim.model.StagingClaimAnalytics">
+		<field name="stagingClaimAnalyticsId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="externalClientId" type="long" />
+		<field name="clientName" type="String" />
+		<field name="claimNumber" type="String" />
+		<field name="externalCaseId" type="long" />
+		<field name="claimStatus" type="String" />
+		<field name="receivedDate" type="String" />
+		<field name="serviceDate" type="String" />
+		<field name="paidDate" type="String" />
+		<field name="externalMemberId" type="long" />
+		<field name="memberName" type="String" />
+		<field name="providerName" type="String" />
+		<field name="billType" type="String" />
+		<field name="primaryDiagnosis" type="String" />
+		<field name="chargedAmount" type="double" />
+		<field name="paidAmount" type="double" />
+		<field name="repricedAmount" type="double" />
+		<field name="savingsAmount" type="double" />
+		<field name="chargedPercent" type="double" />
+		<field name="repricedPercent" type="double" />
+		<field name="savingsPercent" type="double" />
+		<field name="chargedRange" type="String" />
+		<field name="paidRange" type="String" />
+		<field name="repricedRange" type="String" />
+		<field name="savingsRange" type="String" />
+		<field name="claimAging" type="long" />
+		<field name="procedureCodes" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="resultCodes" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="diagnosisCodes" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="country" type="String" />
+		<field name="state" type="String" />
+		<field name="financialExposure" type="double" />
+		<field name="repricedNetwork" type="String" />
+		<field name="clientGroupName" type="String" />
+	</model>
+</model-hints>
