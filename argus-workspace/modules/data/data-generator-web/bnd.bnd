@@ -1,0 +1,3 @@
+Bundle-Name: data-generator-web
+Bundle-SymbolicName: com.argus.oth.data.generator.web
+Bundle-Version: 1.0.0

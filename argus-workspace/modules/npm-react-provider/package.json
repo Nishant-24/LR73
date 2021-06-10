@@ -1,0 +1,49 @@
+{
+	"name": "npm-react-provider",
+	"version": "1.0.0",
+	"description": "NPM React Provider",
+	"private": true,
+	"devDependencies": {
+		"babel-cli": "6.26.0",
+		"babel-loader": "7.1.5",
+		"babel-preset-env": "1.7.0",
+		"babel-preset-react": "6.24.1",
+		"copy-webpack-plugin": "^9.0.0",
+		"liferay-npm-build-support": "^2.18.6",
+		"liferay-npm-bundler": "^2.18.6",
+		"webpack": "^5.38.1",
+		"webpack-cli": "^4.7.2",
+		"webpack-dev-server": "^3.11.2"
+	},
+	"dependencies": {
+		"@reduxjs/toolkit": "^1.5.0",
+		"events": "^3.2.0",
+		"lodash.groupby": "^4.6.0",
+		"lodash.isequal": "^4.5.0",
+		"lodash.map": "^4.6.0",
+		"lodash.omit": "^4.5.0",
+		"moment": "^2.29.1",
+		"react": "16.8.6",
+		"react-bootstrap-table-next": "^4.0.3",
+		"react-bootstrap-table2-filter": "^1.3.3",
+		"react-bootstrap-table2-paginator": "^2.1.2",
+		"react-dates": "^21.8.0",
+		"react-dom": "16.8.6",
+		"react-infinite-scroll-component": "^6.0.0",
+		"react-number-format": "^4.4.4",
+		"react-redux": "^7.2.2",
+		"recharts": "^2.0.7",
+		"regenerator-runtime": "^0.13.7",
+		"rxjs": "^6.6.3"
+	},
+	"scripts": {
+		"build": "liferay-npm-bundler"
+	},
+	"portlet": {
+		"com.liferay.portlet.display-category": "category.hidden",
+		"com.liferay.portlet.instanceable": true,
+		"javax.portlet.name": "npmreactprovider",
+		"javax.portlet.security-role-ref": "power-user,user"
+	},
+	"main": "index.js"
+}

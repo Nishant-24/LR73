@@ -1,0 +1,23 @@
+{ 
+	"$schema": "https://raw.githubusercontent.com/liferay/liferay-js-toolkit/master/resources/schemas/configuration.schema.json",
+	"system": {
+		"category": "case-management-js-web", 
+		"name": "case-management-js-web",
+		"fields": { 
+		} 
+	},
+	"portletInstance": {
+		"fields": {
+			"view": {
+				"type": "string",
+				"name": "view",
+				"description": "choose-which-view-to-display",
+				"options": {
+					"all": "all-cases",
+					"recent": "recently-viewed",
+					"bookmarks": "my-bookmarks"
+				}
+			}
+		} 
+	}
+}
