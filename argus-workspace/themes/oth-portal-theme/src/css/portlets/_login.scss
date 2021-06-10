@@ -1,0 +1,82 @@
+.portlet-login {
+	margin: 0 (-$grid-gutter-width / 2);
+
+	.portlet {
+		margin-bottom: 0;
+	}
+
+	.portlet-icon-back {
+		position: absolute;
+		color: $white;
+		z-index: 2;
+	}
+
+	.login {
+		display: flex;
+		min-height: 100vh;
+		background-color: $gray-200;
+
+		@include media-breakpoint-down(sm) {
+			background: $gray-200 url(@theme_image_path@/argus/login_portlet_splash.jpg) no-repeat center center;
+			background-size: cover;
+		}
+
+		&__container {
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+			flex: 30rem 1;
+			min-height: 100vh;
+			padding: 3.5rem 3rem;
+
+			@include media-breakpoint-down(md) {
+				flex: 50vw 1;
+			}
+
+			@include media-breakpoint-down(sm) {
+				background-color: rgba($gray-200, 0.8);
+			}
+		}
+
+		&__header {}
+
+		&__logo {
+			width: 5.625rem;
+			height: 3.5rem;
+		}
+
+		&__body {}
+
+		&__title {
+			margin-bottom: 3.75rem;
+			font-weight: $font-weight-bold;
+
+			&::after {
+				content: "";
+				width: 2.625rem;
+				height: .313rem;
+				margin-top: .5rem;
+				display: block;
+				background-color: $primary;
+			}
+		}
+
+		&__footer {
+			font-size: .875rem;
+		}
+
+		&__splash {
+			flex: calc(100vw - 30rem) 1;
+			background: transparent url(@theme_image_path@/argus/login_portlet_splash.jpg) no-repeat center center;
+			background-size: cover;
+
+			@include media-breakpoint-down(md) {
+				flex: 50vw 1;
+			}
+
+			@include media-breakpoint-down(sm) {
+				display: none;
+			}
+		}
+	}
+}

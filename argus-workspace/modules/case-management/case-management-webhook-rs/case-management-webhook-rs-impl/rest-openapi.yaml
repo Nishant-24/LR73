@@ -1,0 +1,114 @@
+components:
+    schemas:
+        ProcessEvent:
+            description:
+                OTH ProcessEvent Object
+            properties:
+                primaryKey:
+                    format: int64
+                    type: integer
+                statusCode:
+                    format: int64
+                    type: integer
+                statusDescription:
+                    type: string
+                type:
+                    type: string
+            type: object
+    securitySchemes:
+        oAuth2AuthCode:
+            description:
+                OAuth2 for OTH
+            flows:
+                authorizationCode:
+                    authorizationUrl: /o/oauth2/authorize
+                    tokenUrl: /o/oauth/token
+            type: oauth2
+info:
+    description:
+        OpenAPI definition for OTH's headless APIs
+    license:
+        name: "Apache 2.0"
+        url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+    title: OTH OpenAPI
+    version: v1.0
+openapi: 3.0.1
+paths:
+    "/authorization/{UUID}":
+        patch:
+            parameters:
+                - in: path
+                  name: UUID
+                  required: true
+                  schema:
+                      type: string
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: "#/components/schemas/ProcessEvent"
+                    application/xml:
+                        schema:
+                            $ref: "#/components/schemas/ProcessEvent"
+            responses:
+                200:
+                    content:
+                        application/json: { }
+                        application/xml: { }
+                    description:
+                        "Authorization successfully updated"
+            security:
+                - oAuth2AuthCode: [ ]
+            tags: [ "Authorization" ]
+    "/note/{UUID}":
+        patch:
+            parameters:
+                - in: path
+                  name: UUID
+                  required: true
+                  schema:
+                      type: string
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: "#/components/schemas/ProcessEvent"
+                    application/xml:
+                        schema:
+                            $ref: "#/components/schemas/ProcessEvent"
+            responses:
+                200:
+                    content:
+                        application/json: {}
+                        application/xml: {}
+                    description:
+                        "Note successfully updated"
+            security:
+                - oAuth2AuthCode: []
+            tags: ["Note"]
+    "/task/{UUID}":
+        patch:
+            parameters:
+                - in: path
+                  name: UUID
+                  required: true
+                  schema:
+                      type: string
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: "#/components/schemas/ProcessEvent"
+                    application/xml:
+                        schema:
+                            $ref: "#/components/schemas/ProcessEvent"
+            responses:
+                200:
+                    content:
+                        application/json: {}
+                        application/xml: {}
+                    description:
+                        "Task successfully updated"
+            security:
+                - oAuth2AuthCode: []
+            tags: ["Task"]

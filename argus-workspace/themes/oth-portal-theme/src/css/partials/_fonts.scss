@@ -1,0 +1,39 @@
+@font-face {
+	font-family: 'Interstate';
+	src: local('Interstate-Regular'),
+		url('../font/Interstate-Regular.woff2') format('woff2'),
+		url('../font/Interstate-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Interstate';
+	src: local('Interstate Regular Italic'), local('Interstate-RegularItalic'),
+		url('../font/Interstate-RegularItalic.woff2') format('woff2'),
+		url('../font/Interstate-RegularItalic.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Interstate';
+	src: local('Interstate Light'), local('Interstate-Light'),
+		url('../font/Interstate-Light.woff2') format('woff2'),
+		url('../font/Interstate-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Interstate';
+	src: local('Interstate Light Italic'), local('Interstate-LightItalic'),
+		url('../font/Interstate-LightItalic.woff2') format('woff2'),
+		url('../font/Interstate-LightItalic.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}

@@ -1,0 +1,28 @@
+@import 'liferay-font-awesome/scss/font-awesome';
+@import 'liferay-font-awesome/scss/glyphicons';
+
+@import 'partials/fonts';
+
+@import 'partials/alert';
+@import 'partials/cards';
+@import 'partials/charts';
+@import 'partials/dropdown';
+@import 'partials/header';
+@import 'partials/input-groups';
+@import 'partials/labels';
+@import 'partials/layout';
+@import 'partials/modal';
+@import 'partials/nav';
+@import 'partials/navigation';
+@import 'partials/popover';
+@import 'partials/portlet';
+@import 'partials/react-dates';
+@import 'partials/tables';
+@import 'partials/tooltip';
+@import 'partials/type';
+@import 'partials/utilities';
+
+@import 'portlets/accounts';
+@import "portlets/cases";
+@import "portlets/claims";
+@import 'portlets/login';

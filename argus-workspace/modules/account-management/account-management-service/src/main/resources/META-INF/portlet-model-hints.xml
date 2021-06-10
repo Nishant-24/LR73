@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.argus.oth.account.management.model.AMAnalyticsClaim">
+		<field name="amAnalyticsClaimId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="clientId" type="long" />
+		<field name="amAnalyticsClaimDate" type="Date" />
+		<field name="avgClaimTurnAround" type="int" />
+		<field name="minClaimTurnAround" type="int" />
+		<field name="maxClaimTurnAround" type="int" />
+		<field name="claimTurnAroundGoal" type="int" />
+		<field name="overallAvgClaimTurnAround" type="double" />
+	</model>
+	<model name="com.argus.oth.account.management.model.AMAnalyticsDB">
+		<field name="amAnalyticsDbId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="clientId" type="long" />
+		<field name="savingsPercent" type="double" />
+		<field name="chargedAmount" type="double" />
+		<field name="repricedAmount" type="double" />
+		<field name="avgDownTime" type="double" />
+		<field name="avgSpeedOfAnswer" type="double" />
+		<field name="abandonmentRate" type="double" />
+		<field name="claimsTurnaround" type="long" />
+		<field name="downTimeGoal" type="double" />
+		<field name="speedOfAnswerGoal" type="double" />
+		<field name="abandonmentRateGoal" type="double" />
+		<field name="claimsTurnaroundGoal" type="double" />
+	</model>
+	<model name="com.argus.oth.account.management.model.AMAnalyticsTelephony">
+		<field name="amAnalyticsTelephonyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="clientId" type="long" />
+		<field name="amAnalyticsTelephonyDate" type="Date" />
+		<field name="avgDownTime" type="double" />
+		<field name="avgSpeedOfAnswer" type="double" />
+		<field name="abandonmentRate" type="double" />
+		<field name="downTimeGoal" type="double" />
+		<field name="speedAnswerGoal" type="double" />
+		<field name="abandonmentRateGoal" type="double" />
+		<field name="overallAvgDownTime" type="double" />
+		<field name="overallAvgSpeedOfAnswer" type="double" />
+		<field name="overallAvgAbandonmentRate" type="double" />
+	</model>
+	<model name="com.argus.oth.account.management.model.StagingAMAnalyticsClaim">
+		<field name="stagingAMAnalyticsClaimId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="clientId" type="long" />
+		<field name="amAnalyticsClaimDate" type="String" />
+		<field name="avgClaimTurnAround" type="int" />
+		<field name="minClaimTurnAround" type="int" />
+		<field name="maxClaimTurnAround" type="int" />
+		<field name="claimTurnAroundGoal" type="int" />
+		<field name="overallAvgClaimTurnAround" type="double" />
+	</model>
+	<model name="com.argus.oth.account.management.model.StagingAMAnalyticsDB">
+		<field name="stagingAMAnalyticsDbId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="clientId" type="long" />
+		<field name="savingsPercent" type="double" />
+		<field name="chargedAmount" type="double" />
+		<field name="repricedAmount" type="double" />
+		<field name="avgDownTime" type="double" />
+		<field name="avgSpeedOfAnswer" type="double" />
+		<field name="abandonmentRate" type="double" />
+		<field name="claimsTurnaround" type="long" />
+		<field name="downTimeGoal" type="double" />
+		<field name="speedOfAnswerGoal" type="double" />
+		<field name="abandonmentRateGoal" type="double" />
+		<field name="claimsTurnaroundGoal" type="double" />
+	</model>
+	<model name="com.argus.oth.account.management.model.StagingAMATelephony">
+		<field name="stagingAMATelephonyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="clientId" type="long" />
+		<field name="amAnalyticsTelephonyDate" type="String" />
+		<field name="avgDownTime" type="double" />
+		<field name="avgSpeedOfAnswer" type="double" />
+		<field name="abandonmentRate" type="double" />
+		<field name="downTimeGoal" type="double" />
+		<field name="speedAnswerGoal" type="double" />
+		<field name="abandonmentRateGoal" type="double" />
+		<field name="overallAvgDownTime" type="double" />
+		<field name="overallAvgSpeedOfAnswer" type="double" />
+		<field name="overallAvgAbandonmentRate" type="double" />
+	</model>
+</model-hints>

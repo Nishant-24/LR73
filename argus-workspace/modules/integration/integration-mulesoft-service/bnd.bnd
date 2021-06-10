@@ -1,0 +1,3 @@
+Bundle-Name: integration-mulesoft-service
+Bundle-SymbolicName: com.argus.oth.integration.mulesoft.service
+Bundle-Version: 1.0.0

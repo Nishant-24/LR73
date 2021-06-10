@@ -1,0 +1,26 @@
+{
+	"create-jar": {
+		"output-dir": "dist",
+		"features": {
+			"js-extender": true,
+			"web-context": "/homepage-js-web",
+			"localization": "features/localization/Language",
+			"configuration": "features/configuration.json"
+		}
+	},
+	"config": {
+		"imports": {
+			"npm-react-provider": {
+				"@reduxjs/toolkit": "^1.5.0",
+				"react": "16.8.6",
+				"react-dom": "16.8.6",
+				"react-redux": "^7.2.2",
+				"regenerator-runtime": "^0.13.7"
+			},
+			"charts-js-web": {
+				"/": ">=1.0.0"
+			}
+		}
+	},
+	"dump-report": true
+}
