@@ -1,5 +1,0 @@
-Bundle-Name: data-bulk-load
-Bundle-SymbolicName: com.argus.oth.data.bulk.load
-Bundle-Version: 1.0.0
-Export-Package: com.argus.oth.bulk.load.background.task.service
--dsannotations-options: inherit

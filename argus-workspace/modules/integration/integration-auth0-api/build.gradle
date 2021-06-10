@@ -1,4 +1,0 @@
-dependencies {
-	compileOnly group: "biz.aQute.bnd", name: "biz.aQute.bndlib", version: "5.0.0"
-	compileOnly group: "com.liferay", name: "com.liferay.portal.configuration.metatype.api"
-}

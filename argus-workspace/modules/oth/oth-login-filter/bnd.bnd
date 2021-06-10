@@ -1,5 +1,0 @@
-Bundle-Name: oth-login-filter
-Bundle-SymbolicName: com.argus.oth.hook.filter
-Bundle-Version: 1.0.0
-Export-Package: com.argus.oth.hook.filter
--metatype: *

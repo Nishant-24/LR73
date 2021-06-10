@@ -1,7 +1,0 @@
-dependencies {
-	compileOnly group: "biz.aQute.bnd", name: "biz.aQute.bndlib", version: "5.0.0"
-	compileOnly group: "com.liferay", name: "com.liferay.portal.configuration.metatype.api"
-	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.kernel"
-	compileOnly group: "javax.mail", name: "mail", version: "1.4"
-	compileOnly group: "org.osgi", name: "org.osgi.service.component.annotations"
-}

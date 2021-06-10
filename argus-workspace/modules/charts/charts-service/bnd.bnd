@@ -1,4 +1,0 @@
-Bundle-Name: charts-service
-Bundle-SymbolicName: com.argus.oth.charts.service
-Bundle-Version: 1.0.0
--dsannotations-options: inherit

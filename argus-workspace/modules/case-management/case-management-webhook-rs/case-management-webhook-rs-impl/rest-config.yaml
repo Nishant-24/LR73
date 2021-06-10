@@ -1,9 +1,0 @@
-apiDir: "../case-management-webhook-rs-api/src/main/java"
-apiPackagePath: "com.argus.oth.cases.management.webhook.rs"
-application:
-    baseURI: "/case-management-webhook-rs"
-    className: "CaseManagementWebhookRsApplication"
-    name: "CaseManagementWebhookRs"
-author: "Davy"
-clientDir: "../case-management-webhook-rs-client/src/main/java"
-testDir: "../case-management-webhook-rs-test/src/main/java"

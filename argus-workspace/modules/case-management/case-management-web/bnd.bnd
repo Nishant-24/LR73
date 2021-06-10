@@ -1,4 +1,0 @@
-Bundle-Name: case-management-web
-Bundle-SymbolicName: com.argus.oth.cases.management.web
-Bundle-Version: 1.0.0
-Export-Package: com.argus.oth.cases.management.web.constants

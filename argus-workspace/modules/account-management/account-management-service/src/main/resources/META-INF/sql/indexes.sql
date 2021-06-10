@@ -1,1 +1,0 @@
-create index IX_506C7C on OTH_AMAnalyticsDB (clientId);

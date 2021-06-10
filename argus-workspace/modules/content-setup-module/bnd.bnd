@@ -1,5 +1,0 @@
-Bundle-Name: content-setup-module
-Bundle-SymbolicName: com.argus.oth.content.setup
-Bundle-Version: 1.0.0
-Export-Package: com.argus.oth.content.upgrade
--dsannotations-options: inherit

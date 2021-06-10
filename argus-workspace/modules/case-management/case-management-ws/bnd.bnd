@@ -1,5 +1,0 @@
-Bundle-Name: case-management-ws
-Bundle-SymbolicName: com.argus.oth.case.management.ws
-Bundle-Version: 1.0.0
-Liferay-Configuration-Path: /configuration
--dsannotations-options: inherit

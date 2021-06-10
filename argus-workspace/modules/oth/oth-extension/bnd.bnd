@@ -1,4 +1,0 @@
-Bundle-Name: oth-extension
-Bundle-SymbolicName: com.argus.oth.extension
-Bundle-Version: 1.0.0
-Web-ContextPath: /oth-extension

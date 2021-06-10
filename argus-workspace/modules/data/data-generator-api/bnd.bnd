@@ -1,4 +1,0 @@
-Bundle-Name: data-generator-api
-Bundle-SymbolicName: com.argus.oth.data.generator.api
-Bundle-Version: 1.0.0
-Export-Package: com.argus.oth.data.generator
