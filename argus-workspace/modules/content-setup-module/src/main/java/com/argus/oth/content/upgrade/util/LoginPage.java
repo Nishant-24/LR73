@@ -50,7 +50,7 @@ public class LoginPage extends UpgradeProcess {
 
 	private static final String _LOGIN_PAGE_NAME = "Login";
 
-	private static final String _LOGIN_PORTLET = "com_liferay_login_web_portlet_LoginPortlet";
+	private static final String _LOGIN_PORTLET = "com_argus_login_web_portlet_LoginPortlet";
 
 	@Reference
 	private LayoutLocalService _layoutLocalService;

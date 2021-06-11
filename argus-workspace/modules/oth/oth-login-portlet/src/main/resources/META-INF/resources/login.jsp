@@ -63,7 +63,7 @@
 
 						<div class="inline-alert-container lfr-alert-container"></div>
 
-						<liferay-util:dynamic-include key="com.argus.login.web#/login.jsp#alertPre" />
+						<liferay-util:dynamic-include key="com.liferay.login.portlet#/login.jsp#alertPre" />
 
 						<c:choose>
 							<c:when test='<%= SessionMessages.contains(request, "forgotPasswordSent") %>'>
@@ -138,10 +138,9 @@
 						<liferay-ui:error exception="<%= UserPasswordException.class %>" message="authentication-failed" />
 						<liferay-ui:error exception="<%= UserScreenNameException.MustNotBeNull.class %>" message="the-screen-name-cannot-be-blank" />
 
-						<liferay-util:dynamic-include key="com.argus.login.web#/login.jsp#alertPost" />
+						<liferay-util:dynamic-include key="com.argus.login.portlet#/login.jsp#alertPost" />
 
 						<portlet:actionURL var="carrierLoginURL">
-							
 							<portlet:param name="<%= ActionRequest.ACTION_NAME %>" value="<%= OpenIdConnectWebKeys.OPEN_ID_CONNECT_REQUEST_ACTION_NAME %>" />
 							<portlet:param name="<%= OpenIdConnectWebKeys.OPEN_ID_CONNECT_PROVIDER_NAME %>" value="<%= HtmlUtil.escape((String)request.getAttribute("openIdProviderName")) %>" />
 							<portlet:param name="redirect" value="<%= redirect %>" />
