@@ -9,4 +9,5 @@ dependencies {
 	compileOnly group: "org.osgi", name: "org.osgi.service.component.annotations"
 	compileOnly project(":modules:integration:integration-auth0-api")
 	compileOnly project(":modules:oth:oth-common")
+	compileOnly project(":modules:oth:oth-login-portlet")
 }

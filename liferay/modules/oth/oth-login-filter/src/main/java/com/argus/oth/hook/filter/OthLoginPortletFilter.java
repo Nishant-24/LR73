@@ -2,6 +2,7 @@ package com.argus.oth.hook.filter;
 
 import com.argus.oth.hook.filter.configuration.OthLoginFilterConfigurator;
 
+import com.liferay.login.web.internal.constants.LoginPortletKeys;
 import com.liferay.portal.kernel.util.PortletKeys;
 
 import java.io.IOException;
@@ -21,7 +22,7 @@ import org.osgi.service.component.annotations.Reference;
  * @author Ricky Pan
  */
 @Component(
-	immediate = true, property = {"javax.portlet.name=" + PortletKeys.LOGIN, "service.ranking:Integer=100"},
+	immediate = true, property = {"javax.portlet.name=" + LoginPortletKeys.LOGIN, "service.ranking:Integer=100"},
 	service = PortletFilter.class
 )
 public class OthLoginPortletFilter implements RenderFilter {
