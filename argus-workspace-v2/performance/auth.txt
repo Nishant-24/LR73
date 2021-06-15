@@ -1,0 +1,2 @@
+# JMeter generated Authorization file
+https://carrier-test.oneteamhealth.com/	admin-data@argus.bm	test			BASIC

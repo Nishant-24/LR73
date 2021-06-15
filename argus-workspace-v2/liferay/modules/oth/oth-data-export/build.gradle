@@ -1,0 +1,20 @@
+dependencies {
+	compileInclude group: "commons-io", name: "commons-io", version: "2.6"
+	compileInclude group: "org.apache.poi", name: "poi", version: "4.1.2"
+	compileInclude group: "org.apache.poi", name: "poi-ooxml", version: "4.1.2"
+
+	compileOnly group: "biz.aQute.bnd", name: "biz.aQute.bndlib", version: "3.1.0"
+	compileOnly group: "com.liferay", name: "com.liferay.petra.concurrent"
+	compileOnly group: "com.liferay", name: "com.liferay.petra.function"
+	compileOnly group: "com.liferay", name: "com.liferay.petra.io"
+	compileOnly group: "com.liferay", name: "com.liferay.petra.memory"
+	compileOnly group: "com.liferay", name: "com.liferay.petra.string"
+	compileOnly group: "com.liferay", name: "com.liferay.portal.background.task.api"
+	compileOnly group: "com.liferay", name: "com.liferay.portal.configuration.metatype.api"
+	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.kernel"
+	compileOnly group: "org.osgi", name: "org.osgi.core"
+	compileOnly group: "org.osgi", name: "org.osgi.service.component.annotations"
+	compileOnly project(":modules:case-management:case-management-api")
+	compileOnly project(":modules:claims:claims-api")
+	compileOnly project(":modules:oth:oth-common")
+}

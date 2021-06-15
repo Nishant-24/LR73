@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE look-and-feel PUBLIC "-//Liferay//DTD Look and Feel 7.2.0//EN" "http://www.liferay.com/dtd/liferay-look-and-feel_7_2_0.dtd">
+
+<look-and-feel>
+	<compatibility>
+		<version>7.2.0+</version>
+	</compatibility>
+	<theme id="oth-portal-theme" name="oth-portal-theme">
+		<template-extension>ftl</template-extension>
+		<layout-templates>
+			<custom>
+				<layout-template id="3_column_cards" name="3 Column Cards">
+					<template-path>/layouttpl/custom/3_column_cards.ftl</template-path>
+					<thumbnail-path>/layouttpl/custom/3_column_cards.png</thumbnail-path>
+				</layout-template>
+			</custom>
+		</layout-templates>
+		<portlet-decorator id="barebone" name="Barebone">
+			<default-portlet-decorator>true</default-portlet-decorator>
+			<portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>
+		</portlet-decorator>
+		<portlet-decorator id="borderless" name="Borderless">
+			<portlet-decorator-css-class>portlet-borderless</portlet-decorator-css-class>
+		</portlet-decorator>
+		<portlet-decorator id="decorate" name="Decorate">
+			<portlet-decorator-css-class>portlet-decorate</portlet-decorator-css-class>
+		</portlet-decorator>
+	</theme>
+</look-and-feel>

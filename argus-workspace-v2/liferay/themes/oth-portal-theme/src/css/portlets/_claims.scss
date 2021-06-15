@@ -1,0 +1,98 @@
+.claim {
+	&__nav {
+		border-bottom: 1px solid $gray-300;
+		padding: 1rem;
+	}
+
+	&__card-body {
+		padding: 0;
+
+		.btn-expand {
+			position: absolute;
+			right: 1rem;
+			top: 0.5rem;
+
+			&:focus {
+				box-shadow: none;
+			}
+
+			&:hover {
+				color: $primary;
+			}
+		}
+	}
+
+	&__icon {
+		color: $primary;
+	}
+
+	&__content {
+		padding: 1rem;
+	}
+}
+
+.claim-home {
+
+	&__header {
+		display: flex;
+		align-items: center;
+		padding: .75rem 0 0;
+
+		h3 {
+			margin-left: .5rem;
+
+			a {
+				color: $gray-800;
+				text-decoration: none;
+			}
+		}
+	}
+
+	&__icon {
+		font-size: 2.5rem;
+		color: $primary;
+	}
+}
+
+.claim-filter {
+	padding: .5rem 0;
+	background-color: $secondary;
+
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 1rem;
+	}
+
+	&__icon {
+		color: $primary;
+	}
+
+	&__body {
+		padding: 1rem;
+
+		& + & {
+			margin-top: 1rem;
+			border-top: 1px solid $gray-300;
+		}
+	}
+
+	&__subtitle {
+		font-size: .875rem;
+		font-weight: $font-weight-light;
+		margin-bottom: .5rem;
+	}
+
+	&__selection {
+		display: flex;
+
+		> *:not(:last-child) {
+			margin-right: 2rem;
+		}
+	}
+
+	&__filters {
+		margin-bottom: 1rem;
+	}
+}

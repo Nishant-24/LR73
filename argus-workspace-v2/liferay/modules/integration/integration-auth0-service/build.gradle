@@ -1,0 +1,13 @@
+dependencies {
+	compileInclude group: "com.auth0", name: "auth0", version: "1.22.0"
+
+	compileOnly group: "com.fasterxml.jackson.core", name: "jackson-annotations", version: "2.10.3"
+	compileOnly group: "com.liferay", name: "com.liferay.petra.string"
+	compileOnly group: "com.liferay", name: "com.liferay.portal.background.task.api"
+	compileOnly group: "com.liferay", name: "com.liferay.portal.configuration.metatype.api"
+	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.kernel"
+	compileOnly group: "org.osgi", name: "org.osgi.core"
+	compileOnly group: "org.osgi", name: "org.osgi.service.component.annotations"
+	compileOnly project(":modules:integration:integration-auth0-api")
+	compileOnly project(":modules:oth:oth-common")
+}

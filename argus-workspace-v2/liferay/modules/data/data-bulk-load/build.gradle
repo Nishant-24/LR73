@@ -1,0 +1,20 @@
+dependencies {
+	compileInclude group: "com.jcraft", name: "jsch", version: "0.1.55"
+	compileInclude group: "com.jcraft", name: "jzlib", version: "1.1.3"
+	compileInclude group: "commons-io", name: "commons-io", version: "2.6"
+
+	compileOnly group: "biz.aQute.bnd", name: "biz.aQute.bndlib", version: "3.5.0"
+	compileOnly group: "com.liferay", name: "com.liferay.osgi.util"
+	compileOnly group: "com.liferay", name: "com.liferay.petra.string"
+	compileOnly group: "com.liferay", name: "com.liferay.portal.aop.api"
+	compileOnly group: "com.liferay", name: "com.liferay.portal.background.task.api"
+	compileOnly group: "com.liferay", name: "com.liferay.portal.configuration.metatype.api"
+	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.kernel"
+	compileOnly group: "org.osgi", name: "org.osgi.core"
+	compileOnly group: "org.osgi", name: "org.osgi.service.component.annotations"
+	compileOnly project(":modules:account-management:account-management-api")
+	compileOnly project(":modules:case-management:case-management-api")
+	compileOnly project(":modules:claims:claims-api")
+	compileOnly project(":modules:oth:oth-common")
+	compileOnly project(":modules:oth:oth-email")
+}

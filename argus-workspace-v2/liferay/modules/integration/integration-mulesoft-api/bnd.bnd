@@ -1,0 +1,7 @@
+Bundle-Name: integration-mulesoft-api
+Bundle-SymbolicName: com.argus.oth.integration.mulesoft.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.argus.oth.integration.mulesoft,\
+	com.argus.oth.integration.mulesoft.configuration,\
+	com.argus.oth.integration.mulesoft.dto

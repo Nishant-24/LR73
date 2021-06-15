@@ -1,0 +1,24 @@
+{ 
+	"$schema": "https://raw.githubusercontent.com/liferay/liferay-js-toolkit/master/resources/schemas/configuration.schema.json",
+	"system": {
+		"category": "claims-js-web", 
+		"name": "claims-js-web",
+		"fields": { 
+		} 
+	},
+	"portletInstance": {
+		"fields": {
+			"view": {
+				"type": "string",
+				"name": "view",
+				"description": "choose-which-view-to-display",
+				"options": {
+					"dashboard": "dashboard",
+					"in-process-claims": "in-process-claims",
+					"processed-claims": "processed-claims",
+					"closed-claims": "closed-claims"
+				}
+			}
+		}
+	}
+}
