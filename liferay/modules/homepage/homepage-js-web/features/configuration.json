@@ -1,0 +1,11 @@
+{
+	"$schema": "https://raw.githubusercontent.com/liferay/liferay-js-toolkit/master/resources/schemas/configuration.schema.json",
+	"system": {
+		"category": "homepage-js-web",
+		"name": "homepage-js-web",
+		"fields": {}
+	},
+	"portletInstance": {
+		"fields": {}
+	}
+}

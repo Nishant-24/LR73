@@ -1,0 +1,23 @@
+.modal-header {
+
+	.modal-full-screen & {
+		height: 3rem;
+	}
+
+	.close {
+		color: $white;
+		opacity: 1;
+	}
+}
+
+.modal-body {
+	.modal-full-screen & {
+		padding: 0;
+	}
+}
+
+.modal-content {
+	.modal-full-screen & {
+		border-radius: 0;
+	}
+}

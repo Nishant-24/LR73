@@ -1,0 +1,43 @@
+buildscript {
+	dependencies {
+		classpath group: "com.liferay", name: "com.liferay.gradle.plugins.source.formatter", version: "2.3.413"
+	}
+
+	repositories {
+		maven {
+			url "https://repository-cdn.liferay.com/nexus/content/groups/public"
+		}
+	}
+}
+
+plugins {
+	id "org.sonarqube" version "3.0"
+}
+
+apply plugin: "com.liferay.source.formatter"
+
+apply from: "sonar-exclusions.gradle"
+
+configure(subprojects.findAll { !it.subprojects }) {
+	if (project.path.startsWith(":modules:")) {
+		afterEvaluate { project ->
+			checkSourceFormatting {
+				maxLineLength = 120
+			}
+
+			formatSource {
+				maxLineLength = 120
+			}
+
+			// Workaround to clean up node_modules folder after build
+
+			if (project.tasks.findByName('packageRunBuild')) {
+				task cleanNodeModules(type: Delete) {
+					delete 'node_modules'
+				}
+
+				packageRunBuild.finalizedBy(cleanNodeModules)
+			}
+		}
+	}
+}

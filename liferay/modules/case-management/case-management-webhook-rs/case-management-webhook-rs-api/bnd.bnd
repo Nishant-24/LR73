@@ -1,0 +1,7 @@
+Bundle-Name: case-management-webhook-rs-api
+Bundle-SymbolicName: com.argus.oth.case.management.webhook.rs.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.argus.oth.cases.management.webhook.rs.constants,\
+	com.argus.oth.cases.management.webhook.rs.dto.v1_0,\
+	com.argus.oth.cases.management.webhook.rs.resource.v1_0
