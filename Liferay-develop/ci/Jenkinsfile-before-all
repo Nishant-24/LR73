@@ -1,0 +1,17 @@
+dir('liferay') {
+    sh '''\
+        #!/bin/bash
+
+        set -euxo pipefail
+
+        if [ "$BRANCH_NAME" = "develop" ]; then
+            echo "Running Sonar..."
+
+            ./gradlew sonarqube \
+                --no-daemon --stacktrace --info \
+                -Dsonar.login=$SONAR_TOKEN
+        else
+            echo "Skipping Sonar..."
+        fi
+    '''.stripIndent().trim()
+}

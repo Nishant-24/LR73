@@ -1,0 +1,21 @@
+Bundle-Name: oth-data-export
+Bundle-SymbolicName: oth.data.export
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.argus.oth.data.export,\
+	com.argus.oth.data.export.configuration
+Import-Package:\
+!org.apache.poi.xssf.*,\
+!com.github.luben.zstd.*,\
+!com.microsoft.*,\
+!com.sun.javadoc.*,\
+!com.sun.tools.*,\
+!net.sf.saxon.*,\
+!org.apache.batik.*,\
+!org.apache.jcp.xml.dsig.internal.dom.*,\
+!org.bouncycastle.*,\
+!org.brotli.dec.*,\
+!org.etsi.uri.*,\
+!org.openxmlformats.schemas.*,\
+!org.tukaani.xz.*,\
+ *

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;login.jsp&apos; to &apos;resources&apos;&#x0A;- Original project: &apos;oth-login-web-fragment&apos;&#x0A;- Destination element: &apos;resources&apos;&#x0A;- Original element: &apos;login.jsp&apos;" description="Copy file" element1="src/main/resources/META-INF/resources/login.jsp" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1622180322219" target="/oth-login-web/src/main/resources/META-INF/resources" units="0" version="1.0"/>
+</session>

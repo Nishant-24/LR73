@@ -1,0 +1,6 @@
+Bundle-Name: charts-api
+Bundle-SymbolicName: com.argus.oth.charts.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.argus.oth.charts,\
+	com.argus.oth.charts.model

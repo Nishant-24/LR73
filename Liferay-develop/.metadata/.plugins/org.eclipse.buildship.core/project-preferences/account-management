@@ -1,0 +1,12 @@
+#
+#Mon Jun 07 19:13:50 IST 2021
+classpath=<?xml version\="1.0" encoding\="UTF-8"?>\n<classpath>\n</classpath>\n
+buildScriptPath=build.gradle
+linkedResources=
+subprojectPaths=account-management-api\:account-management-js-web\:account-management-service\:account-management-ws
+managedNatures=
+hasAutoBuildTasks=false
+gradleVersion=5.6.4
+buildDir=build
+managedBuilders=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><commands/>
+derivedResources=.gradle\:build\:account-management-api/build\:account-management-js-web/build\:account-management-service/build\:account-management-ws/build

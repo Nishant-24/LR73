@@ -1,0 +1,182 @@
+#navigation {
+	position: fixed;
+	top: 4.5rem;
+	left: 0;
+	bottom: 0;
+	width: 4rem;
+	padding: 1rem 0;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	background-color: $primary;
+	transition: width .5s ease;
+	z-index: 980;
+
+	.has-control-menu & {
+		top: 8rem;
+	}
+
+	.nav-expanded & {
+		width: 14rem;
+	}
+
+	.dropdown-menu {
+		top: 0;
+		left: 97%;
+		margin: 0;
+		overflow: visible;
+
+		.arrow {
+			height: .6rem;
+			left: -.363rem;
+			margin: 0;
+			width: .3rem;
+			position: absolute;
+
+			&::before,
+			&::after {
+				content: '';
+				display: block;
+				position: absolute;
+				border-color: transparent;
+				border-style: solid;
+				border-width: .3rem .3rem .3rem 0;
+			}
+
+			&::before {
+				border-right-color: transparent;
+				left: 0;
+			}
+
+			&::after {
+				border-right-color: $white;
+				left: .063rem;
+			}
+		}
+
+		.lexicon-icon {
+			width: 1.1rem;
+			height: 1.1rem;
+		}
+
+		.dropdown-item {
+			color: $body-color;
+			white-space: nowrap;
+
+			&:hover {
+				color: $white;
+				background-color: $primary-d2;
+			}
+
+			&:active,
+			&.active {
+				color: $white;
+				background-color: $primary;
+			}
+		}
+	}
+
+	.nav {
+
+		&__link {
+			position: relative;
+			display: flex;
+			align-items: center;
+			color: $white;
+			text-decoration: none;
+			font-size: .875rem;
+			padding: .5rem;
+			overflow: hidden;
+
+			&:hover {
+				background-color: $primary-d2;
+			}
+
+			&.active {
+				background-color: $primary-d1;
+
+				&::before {
+					content: '';
+					position: absolute;
+					width: .375rem;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					z-index: 1;
+					background-color: $white;
+				}
+			}
+		}
+
+		&__icon {
+			display: inline-block;
+			fill: currentColor;
+			vertical-align: middle;
+			width: 3rem;
+			height: 1.5rem;
+		}
+
+		&__name {
+			position: absolute;
+			left: 3.5rem;
+			opacity: 0;
+			white-space: nowrap;
+			transition: opacity .35s ease-in;
+
+			.nav-expanded & {
+				opacity: 1;
+			}
+		}
+
+		&__item {
+			position: relative;
+
+			&:hover {
+
+				.dropdown-menu {
+					display: block;
+				}
+			}
+
+			&.selected::before {
+				content: '';
+				position: absolute;
+				width: .375rem;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				z-index: 1;
+				background-color: #81b4d6;
+			}
+		}
+	}
+
+	.btn-toggle-nav {
+		color: $white;
+		text-align: right;
+		position: relative;
+		box-shadow: none;
+
+		.inline-text {
+			position: absolute;
+			right: 3.5rem;
+			opacity: 0;
+			white-space: nowrap;
+			transition: opacity .35s ease-in;
+
+			.nav-expanded & {
+				opacity: 1;
+			}
+		}
+
+		.inline-item {
+			width: 3rem;
+			justify-content: center;
+			transition: transform .4s ease-in;
+
+			.nav-expanded & {
+				transform: scaleX(-1);
+			}
+		}
+	}
+}

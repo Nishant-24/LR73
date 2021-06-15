@@ -1,0 +1,83 @@
+{
+  "kind": "Deployment",
+  "id": "webserver",
+  "image": "liferaycloud/nginx:1.16.1-4.0.2",
+  "memory": 512,
+  "cpu": 2,
+  "scale": 1,
+  "dependencies": [
+    "liferay"
+  ],
+  "loadBalancer": {
+    "targetPort": 80,
+    "cdn": true,
+    "ssl": {
+      "key": "@lcp-secret-webserver-key",
+      "crt": "@lcp-secret-webserver-crt"
+    }
+  },
+  "readinessProbe": {
+    "httpGet": {
+      "path": "/nginx_status",
+      "port": 80
+    },
+    "initialDelaySeconds": 10,
+    "timeoutSeconds": 10,
+    "failureThreshold": 3
+  },
+  "livenessProbe": {
+    "httpGet": {
+      "path": "/nginx_status",
+      "port": 80
+    },
+    "initialDelaySeconds": 30,
+    "timeoutSeconds": 10,
+    "failureThreshold": 3
+  },
+  "environments": {
+    "infra": {
+      "deploy": false
+    },
+    "dev": {
+      "loadBalancer": {
+        "cdn": false,
+        "customDomains": [
+          "carrier-dev.oneteamhealth.com"
+        ],
+        "targetPort": 80
+      }
+    },
+    "prod": {
+      "cpu": 2,
+      "loadBalancer": {
+        "customDomains": [
+          "carrier.oneteamhealth.com"
+        ]
+      },
+      "memory": 512,
+      "scale": 2
+    },
+    "dr": {
+      "cpu": 2,
+      "memory": 512,
+      "scale": 2
+    },
+    "test": {
+      "cpu": 2,
+      "loadBalancer": {
+        "customDomains": [
+          "carrier-test.oneteamhealth.com"
+        ]
+      },
+      "memory": 512,
+      "scale": 2
+    },
+    "qa": {
+      "loadBalancer": {
+        "customDomains": [
+          "carrier-qa.oneteamhealth.com"
+        ]
+      }
+    }
+  }
+}

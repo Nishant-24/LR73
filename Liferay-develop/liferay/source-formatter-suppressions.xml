@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<suppressions>
+	<checkstyle>
+		<suppress checks="MissingAuthorCheck" files=".*"/>
+		<suppress checks="ChainingCheck" files=".*"/>
+	</checkstyle>
+	<source-check>
+		<suppress checks="CopyrightCheck" files=".*"/>
+		<suppress checks="JavaReturnStatementCheck" files=".*"/>
+		<suppress checks="PrimitiveWrapperInstantiationCheck" files=".*"/>
+		<suppress checks="JavaComponentAnnotationsCheck" files=".*"/>
+	</source-check>
+</suppressions>

@@ -1,0 +1,12 @@
+#
+#Mon Jun 07 19:13:50 IST 2021
+classpath=<?xml version\="1.0" encoding\="UTF-8"?>\n<classpath>\n</classpath>\n
+buildScriptPath=build.gradle
+linkedResources=
+subprojectPaths=case-management-api\:case-management-js-web\:case-management-service\:case-management-web\:case-management-webhook-rs\:case-management-ws\:case-management-webhook-rs/case-management-webhook-rs-api\:case-management-webhook-rs/case-management-webhook-rs-client\:case-management-webhook-rs/case-management-webhook-rs-impl
+managedNatures=
+hasAutoBuildTasks=false
+gradleVersion=5.6.4
+buildDir=build
+managedBuilders=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><commands/>
+derivedResources=.gradle\:build\:case-management-api/build\:case-management-js-web/build\:case-management-service/build\:case-management-web/build\:case-management-webhook-rs/build\:case-management-ws/build\:case-management-webhook-rs/case-management-webhook-rs-api/build\:case-management-webhook-rs/case-management-webhook-rs-client/build\:case-management-webhook-rs/case-management-webhook-rs-impl/build

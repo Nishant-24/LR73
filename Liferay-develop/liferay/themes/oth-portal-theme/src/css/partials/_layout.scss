@@ -1,0 +1,17 @@
+#wrapper {
+	padding-top: 0;
+}
+
+#content {
+	overflow: hidden;
+	padding: 0 .938rem;
+
+	.private-page & {
+		padding: 4.5rem 0 0 4rem;
+		transition: padding .5s ease;
+	}
+
+	.nav-expanded & {
+		padding-left: 14rem;
+	}
+}

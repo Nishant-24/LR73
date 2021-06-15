@@ -1,0 +1,4 @@
+Bundle-Name: integration-mulesoft-background-task
+Bundle-SymbolicName: com.argus.oth.integration.mulesoft.background.task
+Bundle-Version: 1.0.0
+Export-Package: com.argus.oth.integration.mulesoft.background.task

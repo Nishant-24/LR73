@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.liferay.login.web.internal.constants.LoginPortletKeys"/>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.util.PrefsPropsUtil"/>
+<fullyQualifiedTypeName name="com.liferay.petra.content.ContentUtil"/>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.util.PortalClassLoaderUtil"/>
+<fullyQualifiedTypeName name="com.liferay.portal.util.PropsUtil"/>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.util.LocalizationUtil"/>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.util.LinkedHashMapBuilder"/>
+</qualifiedTypeNameHistroy>

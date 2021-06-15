@@ -1,0 +1,12 @@
+#
+#Mon Jun 07 19:13:50 IST 2021
+classpath=<?xml version\="1.0" encoding\="UTF-8"?>\n<classpath>\n<classpathentry kind\="lib" path\="/home/st12/.gradle/caches/modules-2/files-2.1/biz.aQute.bnd/biz.aQute.bndlib/5.0.0/f2436e941f40d5a8ffe8626ce7bad5dd86c137c6/biz.aQute.bndlib-5.0.0.jar" sourcepath\="/home/st12/.gradle/caches/modules-2/files-2.1/biz.aQute.bnd/biz.aQute.bndlib/5.0.0/bc61e212b80145d40bc19edc43282cd973af783e/biz.aQute.bndlib-5.0.0-sources.jar">\n\t<attributes>\n\t\t<attribute name\="gradle_used_by_scope" value\=""/>\n\t</attributes>\n</classpathentry>\n<classpathentry kind\="lib" path\="/home/st12/.gradle/caches/modules-2/files-2.1/com.liferay/com.liferay.portal.configuration.metatype.api/3.1.5/9b2e929003cdc7e8e7af25753519e816988eaa13/com.liferay.portal.configuration.metatype.api-3.1.5.jar" sourcepath\="/home/st12/.gradle/caches/modules-2/files-2.1/com.liferay/com.liferay.portal.configuration.metatype.api/3.1.5/3d80d6410117243f84b006a3ff113dab8e6f918/com.liferay.portal.configuration.metatype.api-3.1.5-sources.jar">\n\t<attributes>\n\t\t<attribute name\="gradle_used_by_scope" value\=""/>\n\t</attributes>\n</classpathentry>\n<classpathentry kind\="lib" path\="/home/st12/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.26/77100a62c2e6f04b53977b9f541044d7d722693d/slf4j-api-1.7.26.jar" sourcepath\="/home/st12/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.26/21c84cdf9da108216b5e402611d4af479b60cb8/slf4j-api-1.7.26-sources.jar">\n\t<attributes>\n\t\t<attribute name\="gradle_used_by_scope" value\=""/>\n\t</attributes>\n</classpathentry>\n</classpath>\n
+buildScriptPath=build.gradle
+linkedResources=
+subprojectPaths=
+managedNatures=
+hasAutoBuildTasks=false
+gradleVersion=5.6.4
+buildDir=build
+managedBuilders=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><commands/>
+derivedResources=.gradle\:build

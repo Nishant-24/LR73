@@ -1,0 +1,12 @@
+#
+#Mon Jun 07 19:13:50 IST 2021
+classpath=<?xml version\="1.0" encoding\="UTF-8"?>\n<classpath>\n</classpath>\n
+buildScriptPath=build.gradle
+linkedResources=
+subprojectPaths=integration-auth0-api\:integration-auth0-service\:integration-mulesoft-api\:integration-mulesoft-background-task\:integration-mulesoft-client\:integration-mulesoft-service
+managedNatures=
+hasAutoBuildTasks=false
+gradleVersion=5.6.4
+buildDir=build
+managedBuilders=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><commands/>
+derivedResources=.gradle\:build\:integration-auth0-api/build\:integration-auth0-service/build\:integration-mulesoft-api/build\:integration-mulesoft-background-task/build\:integration-mulesoft-client/build\:integration-mulesoft-service/build

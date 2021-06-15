@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+/home/st12/Projects/argus-oth/Liferay-develop/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3015470504.index
+/oth-login-web-fragment/src/main/resources
+/home/st12/Projects/argus-oth/Liferay-develop/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/52789692.index
+/case-management-web/src/main/java
+/home/st12/Projects/argus-oth/Liferay-develop/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3368786075.index
+/data-generator-web/src/main/java
+/home/st12/Projects/argus-oth/Liferay-develop/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/574656166.index
+/oth-login-web/src/main/java

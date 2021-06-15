@@ -1,0 +1,582 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.argus.oth.cases.management.model.Authorization">
+		<field name="uuid" type="String" />
+		<field name="authorizationId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="modifiedUserId" type="long" />
+		<field name="caseId" type="long" />
+		<field name="externalAuthorizationId" type="long" />
+		<field name="memberId" type="long" />
+		<field name="description" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="rtcAuthorizationStatus" type="String" />
+		<field name="authStatus" type="String" />
+		<field name="statusChangeDate" type="Date" />
+		<field name="receivedDate" type="Date" />
+		<field name="authNumber" type="String" />
+		<field name="category" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="rtcAuthorizationType" type="String" />
+		<field name="facility" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="procedureCode" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="comments" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="externalModifiedDate" type="Date" />
+		<field name="effectiveFrom" type="Date" />
+		<field name="effectiveThru" type="Date" />
+		<field name="processStatus" type="String" />
+		<field name="failureDescription" type="String">
+			<hint name="max-length">2000</hint>
+		</field>
+		<field name="rowProcessed" type="String" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.AuthProcedure">
+		<field name="authProcedureId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="externalAuthorizationId" type="long" />
+		<field name="authNumber" type="String" />
+		<field name="medicalCodeId" type="String" />
+		<field name="description" type="String">
+			<hint name="max-length">2000</hint>
+		</field>
+		<field name="externalModifiedDate" type="Date" />
+		<field name="externalCreatedDate" type="Date" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.Cases">
+		<field name="uuid" type="String" />
+		<field name="caseId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="externalCaseId" type="long" />
+		<field name="clientId" type="long" />
+		<field name="clientName" type="String" />
+		<field name="clientGroupId" type="long" />
+		<field name="caseNumber" type="String" />
+		<field name="caseStartDate" type="Date" />
+		<field name="caseEndDate" type="Date" />
+		<field name="memberId" type="long" />
+		<field name="primaryDiagCode" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="primaryCode" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="status" type="String" />
+		<field name="estimateEntryDate" type="Date" />
+		<field name="caseManager" type="String" />
+		<field name="consentReceivedDate" type="Date" />
+		<field name="medicalPlan" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="costEstimate" type="String" />
+		<field name="lastUpdated" type="Date" />
+		<field name="externalCreatedDate" type="Date" />
+		<field name="chargedAmount" type="double" />
+		<field name="paidAmount" type="double" />
+		<field name="repricedAmount" type="double" />
+		<field name="savingsAmount" type="double" />
+		<field name="savingsPercent" type="double" />
+		<field name="treatingPhysician" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="primaryFacility" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="rowProcessed" type="String" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.CasesGroupItem">
+		<field name="casesGroupItemId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="userId" type="long" />
+		<field name="externalCaseId" type="long" />
+		<field name="type" type="String" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.Claim">
+		<field name="claimId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="externalClaimId" type="long" />
+		<field name="claimRef" type="String" />
+		<field name="authorizationNumber" type="String" />
+		<field name="serviceFrom" type="Date" />
+		<field name="serviceThru" type="Date" />
+		<field name="provider" type="String" />
+		<field name="prioritizedBill" type="String" />
+		<field name="diagCodesCombined" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="providerState" type="String" />
+		<field name="tpmReceivedDate" type="Date" />
+		<field name="claimTurnaround" type="long" />
+		<field name="billType" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="providerNetwork" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="repricedNetwork" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="statusSortOrder" type="long" />
+		<field name="paidDate" type="Date" />
+		<field name="paidAmount" type="double" />
+		<field name="claimStatus" type="String" />
+		<field name="rowProcessed" type="String" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.ClaimDetail">
+		<field name="claimDetailId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="lineId" type="long" />
+		<field name="externalClaimId" type="long" />
+		<field name="serviceFrom" type="Date" />
+		<field name="serviceThru" type="Date" />
+		<field name="resultCodes" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="procedureCode" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="chargedAmount" type="double" />
+		<field name="repricedAmount" type="double" />
+		<field name="claimAmount" type="double" />
+		<field name="paidDate" type="Date" />
+		<field name="paidAmount" type="double" />
+		<field name="savingsAmount" type="double" />
+		<field name="units" type="int" />
+		<field name="coverage" type="String" />
+		<field name="lineStatus" type="String" />
+		<field name="revCode" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="rowProcessed" type="String" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.Client">
+		<field name="clientId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="externalClientPk" type="long" />
+		<field name="externalClientId" type="long" />
+		<field name="clientName" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="telephonyNumber" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="externalModifiedDate" type="Date" />
+		<field name="externalCreatedDate" type="Date" />
+		<field name="rowProcessed" type="String" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.ClientGroup">
+		<field name="clientGroupId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="externalClientGroupId" type="long" />
+		<field name="clientId" type="long" />
+		<field name="clientGroup" type="String" />
+		<field name="clientGroupName" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="rowProcessed" type="String" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.DataRequest">
+		<field name="dataRequestId" type="long" />
+		<field name="clientId" type="long" />
+		<field name="caseId" type="long" />
+		<field name="externalCaseId" type="long" />
+		<field name="type" type="String" />
+		<field name="lastUpdatedDate" type="Date" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.Member">
+		<field name="memberId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="externalMemberId" type="long" />
+		<field name="clientId" type="long" />
+		<field name="clientGroupId" type="long" />
+		<field name="memberNumber" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="memberFirstName" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="memberLastName" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="memberDOB" type="Date" />
+		<field name="certificationNumber" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="rxNumber" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="externalModifiedDate" type="Date" />
+		<field name="externalCreatedDate" type="Date" />
+		<field name="rowProcessed" type="String" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.Note">
+		<field name="uuid" type="String" />
+		<field name="noteId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="caseId" type="long" />
+		<field name="externalNoteId" type="long" />
+		<field name="type" type="String" />
+		<field name="noteType" type="String" />
+		<field name="text" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="noteCreateDate" type="Date" />
+		<field name="caller" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="callee" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="direction" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="code" type="String" />
+		<field name="processStatus" type="String" />
+		<field name="failureDescription" type="String" />
+		<field name="userId" type="long" />
+		<field name="noteAuthor" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="rowProcessed" type="String" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.ReferenceTypeCode">
+		<field name="referenceTypeCodeId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="externalReferenceTypeCodeId" type="long" />
+		<field name="type" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="key" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="description" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="rowProcessed" type="String" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.StagingAuthorization">
+		<field name="stagingAuthorizationId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="externalCaseId" type="long" />
+		<field name="externalAuthorizationId" type="long" />
+		<field name="externalMemberId" type="long" />
+		<field name="description" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="rtcAuthorizationStatus" type="String" />
+		<field name="authStatus" type="String" />
+		<field name="statusChangeDate" type="String" />
+		<field name="receivedDate" type="String" />
+		<field name="authNumber" type="String" />
+		<field name="category" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="rtcAuthorizationType" type="String" />
+		<field name="facility" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="procedureCode" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="comments" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="effectiveFrom" type="String" />
+		<field name="effectiveThru" type="String" />
+		<field name="externalCreateDate" type="String" />
+		<field name="externalModifiedDate" type="String" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.StagingAuthProcedure">
+		<field name="stagingAuthProcedureId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="externalAuthorizationId" type="long" />
+		<field name="authNumber" type="String" />
+		<field name="medicalCodeId" type="String" />
+		<field name="description" type="String">
+			<hint name="max-length">2000</hint>
+		</field>
+		<field name="externalModifiedDate" type="String" />
+		<field name="externalCreatedDate" type="String" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.StagingCases">
+		<field name="stagingCaseId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="externalCaseId" type="String" />
+		<field name="externalClientPk" type="String" />
+		<field name="clientGroupId" type="String" />
+		<field name="caseNumber" type="String" />
+		<field name="caseStartDate" type="String" />
+		<field name="caseEndDate" type="String" />
+		<field name="memberId" type="String" />
+		<field name="primaryDiagCode" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="primaryCode" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="status" type="String" />
+		<field name="estimateEntryDate" type="String" />
+		<field name="caseManager" type="String" />
+		<field name="consentReceivedDate" type="String" />
+		<field name="medicalPlan" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="costEstimate" type="String" />
+		<field name="lastUpdated" type="String" />
+		<field name="externalCreatedDate" type="String" />
+		<field name="chargedAmount" type="String" />
+		<field name="paidAmount" type="String" />
+		<field name="repricedAmount" type="String" />
+		<field name="savingsAmount" type="String" />
+		<field name="savingsPercent" type="String" />
+		<field name="treatingPhysician" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="primaryFacility" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="rowProcessed" type="boolean" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.StagingClaim">
+		<field name="stagingClaimId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="externalClaimId" type="long" />
+		<field name="claimRef" type="String" />
+		<field name="authorizationNumber" type="String" />
+		<field name="serviceFrom" type="String" />
+		<field name="serviceThru" type="String" />
+		<field name="provider" type="String" />
+		<field name="prioritizedBill" type="String" />
+		<field name="diagCodesCombined" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="providerState" type="String" />
+		<field name="tpmReceivedDate" type="String" />
+		<field name="claimTurnaround" type="long" />
+		<field name="billType" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="providerNetwork" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="repricedNetwork" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="statusSortOrder" type="long" />
+		<field name="paidDate" type="String" />
+		<field name="paidAmount" type="double" />
+		<field name="claimStatus" type="String" />
+		<field name="externalModifiedDate" type="String" />
+		<field name="externalCreatedDate" type="String" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.StagingClaimDetail">
+		<field name="stagingClaimDetailId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="lineId" type="long" />
+		<field name="externalClaimId" type="long" />
+		<field name="serviceFrom" type="String" />
+		<field name="serviceThru" type="String" />
+		<field name="resultCodes" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="procedureCode" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="chargedAmount" type="double" />
+		<field name="repricedAmount" type="double" />
+		<field name="claimAmount" type="double" />
+		<field name="paidDate" type="String" />
+		<field name="paidAmount" type="double" />
+		<field name="savingsAmount" type="double" />
+		<field name="units" type="int" />
+		<field name="coverage" type="String" />
+		<field name="lineStatus" type="String" />
+		<field name="revCode" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="externalModifiedDate" type="String" />
+		<field name="externalCreatedDate" type="String" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.StagingClient">
+		<field name="stagingClientId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="externalClientPk" type="String" />
+		<field name="clientId" type="String" />
+		<field name="clientName" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="telephonyNumber" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="externalModifiedDate" type="String" />
+		<field name="externalCreatedDate" type="String" />
+		<field name="rowProcessed" type="boolean" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.StagingClientGroup">
+		<field name="stagingClientGroupId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="externalClientGroupId" type="long" />
+		<field name="clientId" type="long" />
+		<field name="clientGroup" type="String" />
+		<field name="clientGroupName" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="externalModifiedDate" type="String" />
+		<field name="externalCreatedDate" type="String" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.StagingMember">
+		<field name="stagingMemberId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="externalMemberId" type="long" />
+		<field name="clientId" type="long" />
+		<field name="clientGroupId" type="long" />
+		<field name="memberNumber" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="memberFirstName" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="memberLastName" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="memberDOB" type="String" />
+		<field name="certificationNumber" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="rxNumber" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="externalModifiedDate" type="String" />
+		<field name="externalCreatedDate" type="String" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.StagingNote">
+		<field name="noteId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="externalCaseId" type="long" />
+		<field name="caseNoteID" type="long" />
+		<field name="type" type="String" />
+		<field name="noteType" type="String" />
+		<field name="noteText" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="noteCreateDate" type="String" />
+		<field name="direction" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="code" type="String" />
+		<field name="caller" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="callee" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="externalCreateDate" type="String" />
+		<field name="externalModifiedDate" type="String" />
+		<field name="noteAuthor" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+	</model>
+	<model name="com.argus.oth.cases.management.model.StagingReferenceTypeCode">
+		<field name="stagingReferenceTypeCodeId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="externalReferenceTypeCodeId" type="long" />
+		<field name="type" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="key" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="description" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="externalModifiedDate" type="String" />
+		<field name="externalCreatedDate" type="String" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.StagingTask">
+		<field name="taskId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="externalCaseId" type="long" />
+		<field name="externalTaskId" type="long" />
+		<field name="priority" type="String" />
+		<field name="startDate" type="String" />
+		<field name="endDate" type="String" />
+		<field name="dueDate" type="String" />
+		<field name="taskStatus" type="String" />
+		<field name="description" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="completedFlag" type="String" />
+		<field name="externalCreateDate" type="String" />
+		<field name="externalModifiedDate" type="String" />
+	</model>
+	<model name="com.argus.oth.cases.management.model.Task">
+		<field name="uuid" type="String" />
+		<field name="taskId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="createdUserId" type="long" />
+		<field name="modifiedDate" type="Date" />
+		<field name="caseId" type="long" />
+		<field name="externalTaskId" type="long" />
+		<field name="priority" type="String" />
+		<field name="startDate" type="Date" />
+		<field name="endDate" type="Date" />
+		<field name="dueDate" type="Date" />
+		<field name="taskStatus" type="String" />
+		<field name="description" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="processStatus" type="String" />
+		<field name="failureDescription" type="String" />
+		<field name="rowProcessed" type="String" />
+	</model>
+</model-hints>

@@ -1,0 +1,19 @@
+!SESSION 2021-06-07 19:11:59.913 -----------------------------------------------
+eclipse.buildId=3.9.1.202012220519-ga2
+java.version=1.8.0_292
+java.vendor=Private Build
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product com.liferay.ide.studio.ui.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product com.liferay.ide.studio.ui.product -data /home/st12/Projects/argus-oth/Liferay-develop/liferay
+
+!ENTRY org.eclipse.egit.core 1 0 2021-06-07 19:12:03.297
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.ui.editors 4 10001 2021-06-07 19:12:05.920
+!MESSAGE Ignoring template 'log' since it has no id.
+
+!ENTRY org.eclipse.ui 4 4 2021-06-07 19:12:06.078
+!MESSAGE Referenced part does not exist yet: fast.
+
+!ENTRY org.eclipse.rse.core 1 0 2021-06-07 19:12:26.707
+!MESSAGE Disconnect operation timed out after 120000 milliseconds.

@@ -1,0 +1,9 @@
+String caseNumber = "20201013-006";
+String diagCode = null;
+try {
+	number = com.argus.oth.cases.management.service.CasesLocalServiceUtil.fetchCasesBy(diagCode, caseNumber).get(0).getCaseId();
+	out.println(number);
+} catch (Exception ex) {
+	out.println(ex.getMessage());
+	ex.printStackTrace();
+}

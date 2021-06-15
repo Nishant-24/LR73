@@ -1,0 +1,12 @@
+dependencies {
+	compile group: "com.liferay", name: "com.liferay.portal.upgrade.api"
+
+	compileOnly group: "com.liferay", name: "com.liferay.petra.string"
+	compileOnly group: "com.liferay", name: "com.liferay.portal.instance.lifecycle.api"
+	compileOnly group: "javax.portlet", name: "portlet-api"
+	compileOnly group: "javax.servlet", name: "javax.servlet-api"
+	compileOnly group: "org.osgi", name: "org.osgi.service.component.annotations"
+	compileOnly project(":modules:case-management:case-management-api")
+	compileOnly project(":modules:oth:oth-common")
+	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.kernel", version: "4.71.0"
+}
