@@ -102,8 +102,8 @@ public class AddUsersUpgradeProcess extends UpgradeProcess {
 
 		UnicodeProperties properties = new UnicodeProperties(true);
 
-		properties.setProperty(PropsKeys.COMPANY_SECURITY_STRANGERS, "false");
-		properties.setProperty(PropsKeys.COMPANY_SECURITY_STRANGERS_WITH_MX, "false");
+		properties.setProperty(PropsKeys.COMPANY_SECURITY_STRANGERS, "true");
+		properties.setProperty(PropsKeys.COMPANY_SECURITY_STRANGERS_WITH_MX, "true");
 
 		_companyLocalService.updatePreferences(companyId, properties);
 	}
